@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .table-users {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        .header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .result {
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-users">
+        <div class="header">Calculation Result</div>
+        <div class="result">{{result}}</div>
+    </div>
+</body>
+</html>
